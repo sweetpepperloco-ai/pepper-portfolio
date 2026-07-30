@@ -1,0 +1,11 @@
+.git
+.openai
+.wrangler
+.next
+dist
+node_modules
+npm-debug.log
+pnpm-debug.log
+.env
+.env.*
+!.env.mainland.example
