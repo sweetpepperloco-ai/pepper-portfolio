@@ -1411,6 +1411,27 @@ footer a {
   background: var(--project-dark);
 }
 
+.external-access-note {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .04em;
+}
+
+.external-access-note::before {
+  width: 7px;
+  height: 7px;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: var(--project);
+  box-shadow: 1px 1px 0 var(--ink);
+  content: "";
+}
+
 .project-results {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
