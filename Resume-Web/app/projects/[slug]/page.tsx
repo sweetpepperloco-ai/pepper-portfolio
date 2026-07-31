@@ -84,9 +84,16 @@ export default async function ProjectPage({
           <p>{project.summary}</p>
           <div className="project-links">
             {project.liveUrl && (
-              <a className="button button-primary" href={project.liveUrl} target="_blank" rel="noreferrer">
-                体验线上产品 ↗
-              </a>
+              <>
+                <a className="button button-primary" href={project.liveUrl} target="_blank" rel="noreferrer">
+                  体验线上产品 ↗
+                </a>
+                {project.slug === "ludo-schema" && (
+                  <small className="external-access-note">
+                    可能需要 VPN 环境
+                  </small>
+                )}
+              </>
             )}
             {project.bvid && (
               <a
