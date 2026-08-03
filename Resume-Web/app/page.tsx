@@ -127,7 +127,7 @@ export default function Home() {
           </div>
           <dl className="hero-proof">
             <div>
-              <dt>4</dt>
+              <dt>5</dt>
               <dd>个完整项目</dd>
             </div>
             <div>
@@ -147,7 +147,7 @@ export default function Home() {
             <div className="machine-top">
               <div className="machine-label">
                 <span>THE PROTOTYPE MACHINE</span>
-                <strong>MODEL MP-04</strong>
+                <strong>MODEL MP-05</strong>
               </div>
               <div className="status-lights" aria-label="机器运行中">
                 <i />
@@ -190,6 +190,12 @@ export default function Home() {
                   >
                     <source src={selected.preview} type="video/webm" />
                   </video>
+                ) : selected.poster ? (
+                  <img
+                    className="preview-poster"
+                    src={selected.poster}
+                    alt={`${selected.title} 项目预览`}
+                  />
                 ) : (
                   <div className="schema-demo" aria-label="LUDO Schema 抽象模型演示">
                     <div className="schema-orbit orbit-one" />

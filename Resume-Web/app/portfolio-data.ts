@@ -216,6 +216,53 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    slug: "bird-shit",
+    number: "05",
+    title: "BirdShit · 欢乐派对竞技",
+    cartridgeTitle: "BIRD SHIT!",
+    kicker: "俯视角多人派对竞技",
+    short: "争夺最后一次命中，把鸟粪大战变成持续的覆盖、截胡与资源博弈。",
+    summary:
+      "面向轻松欢乐、低门槛的多人互动场景，我完成了俯视角派对竞技游戏的策划与全流程制作。通过“路人离场时才结算、最后命中者得分”的延迟计分规则，让简单的投放行为产生持续攻防与戏剧性逆转。",
+    role: "策划 / 全流程制作",
+    period: "2026.07—08",
+    output: "PLAYABLE GAME",
+    genre: "PARTY PVP",
+    symbol: "◆",
+    theme: "bird",
+    color: "#49b978",
+    dark: "#17472f",
+    soft: "#d8f1cf",
+    poster: "/projects/bird-shit-poster.webp",
+    bvid: "BV14JMX6UEft",
+    tools: ["Godot", "Claude", "AI Agent", "Game Design", "LAN Multiplayer", "Git"],
+    highlights: [
+      "先由我定义欢乐、低门槛、强调多人互动的产品目标，再把核心玩法拆成玩家、路人、鸟粪、食物、计分与回合状态，给 Claude 明确的实现边界。",
+      "把开发顺序拆为教程、倒计时、对战、加时与结算五个可独立验收的阶段；每完成一段就运行试玩，用实际结果决定下一轮 AI 任务，而不是一次性生成整套游戏。",
+      "将“离场时结算、最后命中者得分”写成可验证规则，并继续补充覆盖标记、食物弹药、增益、遮蔽物与冲刺体力；玩法取舍由我判断，AI 负责加速程序实现与迭代。",
+      "针对 AI 对手、局域网自动发现、大厅与队伍分配等复杂系统，我向 Claude 提供复现步骤、预期行为和测试条件，再用双端联机验证修复是否真正成立。",
+    ],
+    results: [
+      { value: "5", label: "段完整对局流程" },
+      { value: "2P", label: "局域网派对对抗" },
+      { value: "0", label: "次手动输入 IP" },
+    ],
+    sections: [
+      {
+        title: "设计目标",
+        text: "参考《胡闹厨房》和《Boomerang Fu》的俯视角派对体验，控制学习成本，让玩家快速上手，并在短局中持续获得追逐、争夺与反转的乐趣。",
+      },
+      {
+        title: "核心博弈",
+        text: "玩家操控小鸟向路人投放鸟粪，但分数只在路人离场时结算给最后命中的玩家。双方可以反复覆盖标记、在最后一刻截胡，使对局从命中比拼升级为时机判断。",
+      },
+      {
+        title: "完整交付",
+        text: "已完成教程、倒计时、对战、加时与结算，加入 AI 对手、食物与增益、遮蔽物、冲刺体力和程序化音效，并实现局域网自动发现、大厅与队伍分配。",
+      },
+    ],
+  },
 ];
 
 export const abilities = [
@@ -244,6 +291,6 @@ export const abilities = [
     english: "RAPID PROTOTYPING",
     description:
       "从策划方案到可运行 Demo，持续用试玩、测试与版本对比验证玩法，而不是停留在概念文档。",
-    evidence: ["4 个可运行项目", "36 项核心测试", "Windows 版本与线上产品交付"],
+    evidence: ["5 个可运行项目", "36 项核心测试", "Windows 版本与线上产品交付"],
   },
 ];
